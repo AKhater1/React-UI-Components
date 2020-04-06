@@ -11,3 +11,244 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*navbar */
+
+.navbar .navbar-brand img {
+  width: 60px;
+}
+
+.navbar .navbar-collapse .mr-auto {
+  margin: 0 auto 0 50px;
+}
+
+/* sidebar */
+
+body .p-button.p-button-icon-only {
+  background-color: #464646;
+  border: 1px solid #464646;
+}
+
+body .p-button:enabled:hover {
+  background-color: #5f5f5f !important;
+  border-color: #5f5f5f !important;
+}
+
+body .p-button:enabled:focus {
+  box-shadow: 0 0 0 0.2em #e4e4e4 !important;
+}
+
+.p-sidebar {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.sidebar-items {
+  position: relative;
+  top: 20%;
+}
+
+.sidebar-items .sidebar-item {
+  margin-bottom: 30px;
+  margin-left: 10%;
+}
+
+.sidebar-items .sidebar-item img {
+  width: 36%;
+}
+
+.sidebar-items .sidebar-item a {
+  font-size: 18px;
+  color: #2a2a2a;
+}
+
+.sidebar-items .sidebar-item .pi {
+  position: relative;
+  top: 3px;
+}
+
+.sidebar-items .sidebar-item .pi-user {
+  margin-left: 30px;
+}
+
+.sidebar-items .sidebar-item .pi-users {
+  margin-left: 23px;
+}
+
+.sidebar-items .sidebar-item .pi-file {
+  margin-left: 13px;
+}
+
+/* dashboard */
+
+.dashboard-item {
+  padding: 25px;
+  box-shadow: 0px 0px 13px 5px #d8d8d8;
+  cursor: pointer;
+}
+
+.dashboard-item:hover {
+  background-color: #f9f9f9;
+}
+
+.dashboard-item .item-icon .pi {
+  font-size: 5em;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.dashboard-item .item-icon .pi-users {
+  background-color: #d1f3e0;
+  color: #3cb878;
+}
+
+.dashboard-item .item-icon .pi-user {
+  background-color: #e1f1ff;
+  color: #3f7afc;
+}
+
+.groups-item .item-icon .pi-users {
+  background-color: #fff2d8;
+  color: #ffa001;
+}
+
+.dashboard-item .item-icon .pi-file {
+  background-color: #ffeaea;
+  color: #ff0000;
+}
+
+.dashboard-item .item-content .item-title {
+  color: #999;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 7px !important;
+}
+
+.dashboard-item .item-content .counter {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* groups */
+
+.group-item {
+  padding: 0;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 13px 5px #d8d8d8;
+  
+}
+
+.group-item .group-header {
+  padding: 20px;
+  background-color: #464646;
+  color: #fff;
+  border-radius: 100%/0 0 30px 30px;
+  box-shadow: 0px 6px 9px #c1c1c1;
+}
+
+.group-item .group-header .pi {
+  position: relative;
+  right: 7px;
+  top: 4px;
+  color: #f9b800;
+}
+
+.group-item .group-body {
+  padding: 25px 10px;
+}
+
+.group-item .group-body h6 {
+  margin-bottom: 13px;
+  margin-left: 13px;
+  color: #7d7d7d;
+  font-weight: bold;
+}
+
+.group-item .group-footer {
+  padding: 8px;
+  background-color: #464646;
+  color: #fff;
+  border-radius: 100%/17px 17px 0 0;
+  box-shadow: 0px -5px 9px 0px #c1c1c1;
+  cursor: pointer;
+}
+
+.group-item .group-footer i {
+  position: relative;
+  left: 7px;
+  top: 4px;
+}
+
+/* profile */
+
+.profile-page {
+  background-color: #f9f9f9;
+  padding: 35px 0;
+}
+
+.profile-page .profile-img img {
+  width: 100%;
+}
+
+.profile-page .profile-info h3 {
+  margin-bottom: 23px;
+}
+
+.profile-page .profile-info p {
+  color: #999;
+  font-weight: 600;
+}
+
+.profile-page .profile-info .table td {
+  border-top: unset;
+}
+
+.profile-page .profile-info .table tr td:first-child {
+  color: #999;
+  font-weight: 600;
+}
+
+.profile-page .profile-info .table tr td:last-child {
+  font-weight: 600;
+}
+
+/* lectures */
+
+.lecture-footer button {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #464646;
+  border: none;
+  position: relative;
+  padding: 0.5em 3em;
+  margin: 1.5em;
+  border-radius: 0 5px 5px 5px;
+  overflow: hidden;
+  transition: border-radius 0s;
+}
+
+.lecture-footer button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-style: solid;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+  width: 0;
+  border-width: 12px;
+  border-color: #FFF rgba(255,255,255,0.3) rgba(255,255,255,0.3) #FFF;
+  border-radius: 0 0 5px 0;
+  transition: border-width .2s;
+}
+
+.lecture-footer button:hover {
+  border-radius: 5px;
+  transition-delay: .1s;
+}
+
+.lecture-footer button:hover:before {
+  border-width: 0px;
+}
+
+
+

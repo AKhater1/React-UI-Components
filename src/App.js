@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Components/Navbar';
+import SideMenu from './Components/SideMenu';
+import {Switch, Route} from "react-router-dom";
+import School from './Components/School';
+import Teacher from './Components/Teacher';
+import Student from './Components/Student';
+import Groups from './Components/Groups';
+import Profile from './Components/Profile';
+import Lectures from './Components/Lectures';
 
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <SideMenu />
     </div>
+
+    <Switch>
+      <Route exact path="/school" component={School} />
+      <Route exact path="/teacher" component={Teacher} />
+      <Route exact path="/student" component={Student} />
+      <Route exact path="/groups" component={Groups} />
+      <Route exact path="/profile" component={Profile} />
+      <Route exact path="/lectures" component={Lectures} />
+    </Switch>
+    </>
   );
 }
 
